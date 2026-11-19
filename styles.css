@@ -165,3 +165,186 @@
 @media(prefers-reduced-motion:reduce) {
   .home-page *, .home-page *:before, .home-page *:after { scroll-behavior:auto !important; transition:none !important; }
 }
+
+
+
+/* ==========================================
+   THOSTRA ADVERTISING SYSTEM
+   ========================================== */
+
+.thostra-ad-banner {
+  background: linear-gradient(110deg, #103d2d, #205b40);
+  color: #ffffff;
+  border-bottom: 3px solid #d8b45a;
+  padding: 14px 5%;
+  position: relative;
+  z-index: 20;
+}
+
+.thostra-ad-content {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.thostra-ad-label {
+  color: #f0d58b;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.thostra-ad-copy {
+  flex: 1;
+}
+
+.thostra-ad-copy strong {
+  display: block;
+  color: #f0d58b;
+  font-size: 17px;
+  margin-bottom: 4px;
+}
+
+.thostra-ad-copy p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.thostra-ad-button {
+  display: inline-block;
+  background: #d8b45a;
+  color: #123d2d !important;
+  padding: 11px 18px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.thostra-ad-button:hover {
+  background: #f0d58b;
+}
+
+.thostra-ad-position {
+  color: #f0d58b;
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+/* POP-UP OVERLAY */
+
+.thostra-ad-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 20, 12, .78);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  z-index: 9999;
+}
+
+.thostra-ad-popup {
+  position: relative;
+  background: #123d2d;
+  color: white;
+  width: 100%;
+  max-width: 460px;
+  padding: 38px 30px;
+  border: 2px solid #d8b45a;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(0,0,0,.4);
+}
+
+.thostra-ad-popup h2 {
+  color: #f0d58b;
+  font-size: 27px;
+  margin: 20px 0 12px;
+}
+
+.thostra-ad-popup p {
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+.thostra-ad-popup small {
+  display: block;
+  margin-top: 25px;
+  color: #d8b45a;
+}
+
+.thostra-ad-close {
+  position: absolute;
+  right: 12px;
+  top: 8px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media(max-width:650px) {
+  .thostra-ad-banner {
+    padding: 15px 18px;
+  }
+
+  .thostra-ad-content {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .thostra-ad-copy {
+    flex-basis: 100%;
+    order: 2;
+  }
+
+  .thostra-ad-label {
+    order: 1;
+  }
+
+  .thostra-ad-button {
+    order: 3;
+  }
+
+  .thostra-ad-position {
+    order: 4;
+    margin-left: auto;
+  }
+
+  .thostra-ad-popup {
+    padding: 35px 22px;
+  }
+
+  .thostra-ad-popup h2 {
+    font-size: 23px;
+  }
+}
+
+/* THOSTRA ADVERTISING IMAGES */
+
+.thostra-ad-image {
+  width: 85px;
+  height: 75px;
+  object-fit: cover;
+  border: 2px solid #d8b45a;
+  border-radius: 7px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 650px) {
+  .thostra-ad-image {
+    width: 65px;
+    height: 65px;
+  }
+}
