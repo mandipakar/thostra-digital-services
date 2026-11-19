@@ -3,54 +3,124 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Thostra Digital Services — graphic design, IT support and web solutions in Zimbabwe and worldwide.">
-  <title>Thostra Digital Services | Let There Be Light</title>
+  <meta name="description" content="Thostra Digital Services — graphic design, IT support, printer support, websites and software solutions in Zimbabwe and beyond.">
+  <meta name="theme-color" content="#073b28">
+  <title>THOSTRA Digital Services | Your Digital World, Our Expertise</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-<header class="site-header">
-  <a class="brand" href="index.html">
-    <img src="assets/thostra-logo.png" alt="Thostra logo">
+<body class="home-page">
+<header class="site-header home-header">
+  <a class="brand" href="index.html" aria-label="Thostra Digital Services home">
+    <img src="assets/thostra-logo.png" alt="Original Thostra logo">
     <span><strong>THOSTRA</strong><small>DIGITAL SERVICES</small></span>
   </a>
-  <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
-  
-<nav class="nav">
-  <a href="index.html" class="active">Home</a>
-  <a href="about.html">About</a>
-  <a href="services.html">Services</a>
-  <a href="portfolio.html">Portfolio</a>
-  <a href="support.html">IT Support</a>
-  <a href="marketplace.html">Marketplace</a>
-  <a href="contact.html" class="nav-cta">Contact</a>
-</nav>
+
+  <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+
+  <nav class="nav" aria-label="Main navigation">
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="support.html">IT Support</a>
+    <a href="marketplace.html">Marketplace</a>
+    <a href="contact.html" class="nav-cta">Contact</a>
+  </nav>
 </header>
-</header>
+
 <main>
-  <section class="hero">
-    <div class="hero-copy">
-      <p class="eyebrow">A DIVISION OF THOSTRA</p>
-      <h1>Your Digital World,<br><em>Our Expertise.</em></h1>
-      <p class="lead">Creative design, dependable computer and printer support, and practical web solutions for businesses and individuals in Zimbabwe and beyond.</p>
-      <div class="actions"><a class="button gold" href="services.html">Explore our services</a><a class="button outline" href="contact.html">Request a quote</a></div>
-      <p class="signature">LET THERE BE LIGHT <span>•</span> TECHNOLOGY • CREATIVITY • SOLUTIONS</p>
+  <section class="home-hero" aria-labelledby="hero-title">
+    <div class="home-hero-shade"></div>
+    <div class="home-hero-inner">
+      <div class="home-hero-copy">
+        <p class="home-eyebrow">A DIVISION OF THOSTRA</p>
+        <h1 id="hero-title">Your Digital World,<br><em>Our Expertise.</em></h1>
+        <p class="home-lead">Creative design, dependable computer and printer support, and practical web and software solutions for businesses and individuals in Zimbabwe and beyond.</p>
+        <div class="home-actions">
+          <a class="home-button home-button-gold" href="services.html">Explore Our Services</a>
+          <a class="home-button home-button-outline" href="contact.html">Request a Quote</a>
+        </div>
+        <p class="home-signature">LET THERE BE LIGHT <span>•</span> TECHNOLOGY <span>•</span> CREATIVITY <span>•</span> SOLUTIONS</p>
+      </div>
+      <div class="home-hero-emblem">
+        <img src="assets/thostra-lion-warthog-emblem.png" alt="Lion and warthog emblem">
+      </div>
     </div>
-    <div class="hero-mark"><img src="assets/thostra-logo.png" alt="Thostra tree and sunrise emblem"></div>
+    <div class="home-hero-caption">Inspired by Zimbabwe. Connecting your world.</div>
   </section>
-  <section class="section">
-    <div class="section-heading"><p class="eyebrow">WHAT WE DO</p><h2>Digital services that move you forward.</h2></div>
-    <div class="cards three">
-      <article class="card"><div class="icon">✦</div><h3>Graphic Design</h3><p>Business cards, flyers, posters, social media graphics and print-ready marketing materials.</p><a href="services.html#design">Explore design →</a></article>
-      <article class="card"><div class="icon">⚙</div><h3>IT Support</h3><p>Windows troubleshooting, printer setup, software installation and remote technical assistance.</p><a href="support.html">Get IT support →</a></article>
-      <article class="card"><div class="icon">&lt;/&gt;</div><h3>Web & Software</h3><p>Responsive business websites, product catalogue concepts and software engineering services.</p><a href="services.html#web">Explore technology →</a></article>
+
+  <section class="home-services" aria-labelledby="services-title">
+    <div class="home-section-heading">
+      <p class="home-eyebrow">WHAT WE DO</p>
+      <h2 id="services-title">Digital services that move you forward.</h2>
+      <p>One trusted destination for creative, technical and digital solutions.</p>
+    </div>
+    <div class="home-service-grid">
+      <article class="home-service-card">
+        <div class="home-service-icon" aria-hidden="true">✦</div>
+        <h3>Graphic Design</h3>
+        <p>Business cards, flyers, posters, social media graphics and professional print-ready marketing materials.</p>
+        <a href="services.html#design">Explore design <span>→</span></a>
+      </article>
+      <article class="home-service-card">
+        <div class="home-service-icon" aria-hidden="true">⚙</div>
+        <h3>IT & Printer Support</h3>
+        <p>Computer troubleshooting, printer installation, software setup, maintenance and remote technical assistance.</p>
+        <a href="support.html">Get IT support <span>→</span></a>
+      </article>
+      <article class="home-service-card">
+        <div class="home-service-icon" aria-hidden="true">&lt;/&gt;</div>
+        <h3>Web & Software</h3>
+        <p>Responsive business websites, online catalogues, digital platforms and practical software solutions.</p>
+        <a href="services.html#web">Explore technology <span>→</span></a>
+      </article>
     </div>
   </section>
-  <section class="band"><div><p class="eyebrow">BUILT AROUND YOUR NEEDS</p><h2>Practical solutions. Clear communication. Professional delivery.</h2></div><a class="button gold" href="contact.html">Let's discuss your project</a></section>
-  <section class="section split">
-    <div><p class="eyebrow">OUR APPROACH</p><h2>From the first idea to the final result.</h2><p>We listen to what you need, agree on the scope and timeline, and keep communication clear throughout the work. Every project is approached with care and attention to detail.</p></div>
-    <div class="feature-list"><p>01 <b>Understand your requirements</b></p><p>02 <b>Agree on scope and price</b></p><p>03 <b>Deliver and review</b></p><p>04 <b>Support after delivery</b></p></div>
+
+  <section class="home-promise">
+    <div>
+      <p class="home-eyebrow">BUILT AROUND YOUR NEEDS</p>
+      <h2>Practical solutions. Clear communication. Professional delivery.</h2>
+    </div>
+    <a class="home-button home-button-gold" href="contact.html">Let's Discuss Your Project</a>
+  </section>
+
+  <section class="home-approach" aria-labelledby="approach-title">
+    <div class="home-approach-copy">
+      <p class="home-eyebrow">OUR APPROACH</p>
+      <h2 id="approach-title">From the first idea to the final result.</h2>
+      <p>We listen to what you need, agree on the scope and timeline, and keep communication clear throughout the work. Every project is approached with care and attention to detail.</p>
+      <a class="home-text-link" href="about.html">Learn more about Thostra <span>→</span></a>
+    </div>
+    <div class="home-steps">
+      <div><span>01</span><strong>Understand your requirements</strong></div>
+      <div><span>02</span><strong>Agree on scope and price</strong></div>
+      <div><span>03</span><strong>Deliver and review</strong></div>
+      <div><span>04</span><strong>Support after delivery</strong></div>
+    </div>
+  </section>
+
+  <section class="home-contact-strip">
+    <div>
+      <p class="home-eyebrow">READY TO GET STARTED?</p>
+      <h2>Let's bring your next idea to life.</h2>
+    </div>
+    <a class="home-button home-button-gold" href="https://wa.me/263773035037" target="_blank" rel="noopener">Chat with Thostra</a>
   </section>
 </main>
-<footer><div class="footer-brand">THOSTRA <span>DIGITAL SERVICES</span><small>LET THERE BE LIGHT</small></div><p>Technology • Creativity • Solutions</p><p>Zimbabwe & international clients</p><small>© <span id="year"></span> Thostra Digital Services — A division of Thostra.</small></footer>
+
+<footer class="home-footer">
+  <a class="home-footer-brand" href="index.html">
+    <img src="assets/thostra-logo.png" alt="">
+    <span><strong>THOSTRA</strong><small>DIGITAL SERVICES</small></span>
+  </a>
+  <p class="home-footer-motto">LET THERE BE LIGHT</p>
+  <p>Technology <span>•</span> Creativity <span>•</span> Solutions</p>
+  <p>Zimbabwe &amp; international clients</p>
+  <p class="home-footer-contact">WhatsApp: +263 773 035 037</p>
+  <small>© <span id="year"></span> Thostra Digital Services — A division of Thostra.</small>
+</footer>
+
 <script src="script.js"></script>
-</body></html>
+</body>
+</html>
